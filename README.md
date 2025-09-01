@@ -2,8 +2,8 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/Mahbub2236/auth.git
-cd auth
+git clone https://github.com/Mahbub2236/ExamWeek3Assignment
+cd ExamWeek3Assignment
 
 # 2. Install dependencies
 composer install
@@ -15,7 +15,7 @@ cp .env.example .env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=laraauth
+DB_DATABASE=project
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -24,7 +24,7 @@ php artisan key:generate
 
 # 6. Import SQL database
 # Option 1: Using MySQL CLI
-mysql -u root -p laraauth < database.sql
+mysql -u root -p project < database.sql
 # Option 2: Using phpMyAdmin (Import tab)
 
 # 7. (Optional) Run migrations
